@@ -24,6 +24,8 @@ extension CLLocationCoordinate2D{
     static let spot12 = CLLocationCoordinate2D(latitude: 35.4779026696762, longitude: 139.4446076115675)
     struct SpotMap: View {
         var body: some View {
+        VStack{
+            Spacer()
             HStack {
                 Image(systemName: "map.fill")
                     .font(.largeTitle)
@@ -32,6 +34,7 @@ extension CLLocationCoordinate2D{
             }
             .foregroundStyle(Color("titleColor"))
             Text("アクアマップの紹介文")
+            Spacer()
                 Map(){
                     Marker("川崎水族館", systemImage:"house.lodge.circle.fill", coordinate: spot01)
                         .tint(.blue)
@@ -60,10 +63,11 @@ extension CLLocationCoordinate2D{
                 }
                 .frame(width: 360, height: 400)
                 .border(Color.gray, width: 6)
+            Spacer()
             }
         }
     }
-
+}
     #Preview {
         SpotMap()
     }
