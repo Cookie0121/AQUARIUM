@@ -38,6 +38,7 @@ struct WebList: View {
                     .listRowBackground(Color.blue.opacity(0.1))
             }
             .navigationTitle("アクアサイト")
+            
         }
     }
 }
