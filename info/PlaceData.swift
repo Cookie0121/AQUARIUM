@@ -28,6 +28,5 @@ var placeArray = [
     PlaceData(name: "八景島シーパラダイス", photo: "photo9", text: "説明文"),
     PlaceData(name: "フォーチュンアクアリウム", photo: "photo10", text: "説明文"),
     PlaceData(name: "間門小学校附属海水水族館", photo: "photo11", text: "説明文"),
-    PlaceData(name: "大和市自然観察センター・しらかしのいえ", photo: "photo12", text: "説明文"),
-    PlaceData(name: "ヨコハマおもしろ水族館", photo: "photo13", text: "説明文")
+    PlaceData(name: "大和市自然観察センター・しらかしのいえ", photo: "photo12", text: "説明文")
 ]
