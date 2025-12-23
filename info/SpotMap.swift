@@ -68,6 +68,8 @@ extension CLLocationCoordinate2D{
         }
     }
 }
+.frame(maxWidth: infinity, maxHeight: infinity)
+.background(LinearGradient(colors: [Color.blue, Color.green], startPoint: .top, endPoint: .bottom))
     #Preview {
         SpotMap()
     }
