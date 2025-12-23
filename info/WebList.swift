@@ -32,6 +32,7 @@ let webList = [
 
 struct WebList: View {
     var body: some View {
+    VStack{
         NavigationView{
             List(webList) { item in
                 Link(item.title, destination: URL(string: item.url)!)
@@ -42,12 +43,10 @@ struct WebList: View {
             .background(Color.blue.opacity(0.1))
         }
     }
-}
-    #Preview {
-        WebList()
     }
-VStack{
-    
 }
 .frame(maxWidth: infinity, maxHeight: infinity)
 .background(LinearGradient(colors: [Color.blue, Color.green], startPoint: .top, endPoint: .bottom))
+    #Preview {
+        WebList()
+    }
