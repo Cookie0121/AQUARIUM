@@ -8,16 +8,16 @@
 import SwiftUI
 
 //Webサイトのデータの構造体
-struct WebData: Identifiable{
+struct WebData: Identifiable {
     let id = UUID()
     let title: String
     let url: String
 }
 
 //Webサイトリスト
-let weblist = [
+let webList = [
     WebData(title: "川崎水族館", url:" https://kawa-sui.com/"),
-     WebData(title: "観音崎自然博物館", url:" https://kannonzaki-nature-museum.jimdo.com/"),
+    WebData(title: "観音崎自然博物館", url:" https://kannonzaki-nature-museum.jimdo.com/"),
     WebData(title: "北里大学アクアリウムラボ", url:" https://www.kitasato-u.ac.jp/mb/Aquarium/index.html"),
     WebData(title: "相模川ふれあい科学館", url:" https://sagamigawa-fureai.com/"),
     WebData(title: "新江ノ島水族館", url:" https://www.enosui.com/"),
@@ -33,7 +33,7 @@ let weblist = [
 struct WebList: View {
     var body: some View {
         NavigationView{
-            List(weblist) { item in
+            List(webList) { item in
                 Link(item.title, destination: URL(string: item.url)!)
                     .listRowBackground(Color.blue.opacity(0.1))
             }
