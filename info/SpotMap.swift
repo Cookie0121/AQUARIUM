@@ -30,7 +30,7 @@ extension CLLocationCoordinate2D{
                 Text("アクアマップ")
                     .font(.system(size: 40, weight: .bold, design: .serif))
             }
-            .foregroundStyle(.title)
+            .foregroundStyle(Color("titleColor"))
             Text("アクアマップの紹介文")
                 Map(){
                     Marker("川崎水族館", systemImage:"house.lodge.circle.fill", coordinate: spot01)
