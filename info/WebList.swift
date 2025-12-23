@@ -27,8 +27,7 @@ let weblist = [
     WebData(title: "八景島シーパラダイス", url:" https://www.seaparadise.co.jp/"),
     WebData(title: " フォーチュンアクアリウム", url:" https://fortune-aquarium.com/"),
     WebData(title: "間門小学校附属海水水族館", url:" https://www.edu.city.yokohama.lg.jp/school/es/makado/index.cfm/1,0,59,html"),
-    WebData(title: "大和市自然観察センター", url:" http://www.yamato-zaidan.or.jp/shirakashi"),
-    WebData(title: "ヨコハマおもしろ水族館", url:" https://www.omoshirosuizokukan.com/")
+    WebData(title: "大和市自然観察センター", url:" http://www.yamato-zaidan.or.jp/shirakashi")
 ]
 
 struct WebList: View {
